@@ -1,0 +1,8 @@
+{
+  "name": "Remix MediCare - Recordatorio y Control de Medicamentos",
+  "description": "Diseño de interfaz móvil moderna y amigable para el seguimiento diario de medicamentos, clima y recordatorios con estética Apple.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

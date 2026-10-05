@@ -1,0 +1,87 @@
+import { Medication, WeatherInfo, UserProfileData } from '../types';
+
+export const INITIAL_MEDICATIONS: Medication[] = [
+  {
+    id: 'med-1',
+    name: 'Ibuprofeno',
+    dosage: '400mg',
+    time: '09:00 AM',
+    timeMinutes: 540,
+    type: 'pill',
+    instructions: 'Tomar con un vaso de agua después del desayuno.',
+    color: '#0284c7', // Sky Blue
+    bgLight: '#e0f2fe',
+    status: 'taken',
+    takenAt: '09:04 AM',
+    totalPills: 30,
+    remainingPills: 19,
+    frequency: 'Cada 8 horas (según dolor)',
+    prescribedBy: 'Dra. Elena Ramos (Clínica Santa María)',
+  },
+  {
+    id: 'med-2',
+    name: 'Vitamina C',
+    dosage: '500mg',
+    time: '12:00 PM',
+    timeMinutes: 720,
+    type: 'capsule',
+    instructions: 'Tomar junto con el almuerzo. No masticar.',
+    color: '#10b981', // Mint Green
+    bgLight: '#d1fae5',
+    status: 'pending',
+    totalPills: 60,
+    remainingPills: 42,
+    frequency: 'Una vez al día con la comida principal',
+    prescribedBy: 'Dr. Alejandro Silva (Nutrición)',
+  },
+  {
+    id: 'med-3',
+    name: 'Omega 3',
+    dosage: '1000mg',
+    time: '08:00 PM',
+    timeMinutes: 1200,
+    type: 'capsule',
+    instructions: 'Cápsula blanda. Tomar con la cena ligera.',
+    color: '#0ea5e9',
+    bgLight: '#e0f2fe',
+    status: 'pending',
+    totalPills: 45,
+    remainingPills: 28,
+    frequency: 'Diario antes de descansar',
+    prescribedBy: 'Dr. Alejandro Silva (Nutrición)',
+  },
+  {
+    id: 'med-4',
+    name: 'Melatonina',
+    dosage: '3mg',
+    time: '10:30 PM',
+    timeMinutes: 1350,
+    type: 'pill',
+    instructions: 'Tomar 30 minutos antes de dormir en ambiente oscuro.',
+    color: '#6366f1',
+    bgLight: '#e0e7ff',
+    status: 'pending',
+    totalPills: 30,
+    remainingPills: 24,
+    frequency: 'Uso nocturno',
+    prescribedBy: 'Dra. Elena Ramos',
+  },
+];
+
+export const INITIAL_WEATHER: WeatherInfo = {
+  temp: 22,
+  condition: 'Soleado y templado',
+  city: 'Madrid / San José',
+  humidity: 48,
+  uvIndex: 4,
+};
+
+export const INITIAL_USER: UserProfileData = {
+  name: 'Lucía González',
+  email: 'lucia.gonzalez@example.com',
+  bloodType: 'O Rh+',
+  emergencyContact: '+34 612 890 341 (Carlos G.)',
+  doctorName: 'Dra. Elena Ramos (Medicina Familiar)',
+  soundEnabled: true,
+  hapticsEnabled: true,
+};
